@@ -1,0 +1,14 @@
+input
+{
+    background-color: #eae7dc;
+    border: 1px solid #7c7c7c;
+    box-shadow: 1px 1px #8e8d8a;
+    font-weight: 400;
+    border-radius: 4px;
+    width: 42vh;
+    height: 2em;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

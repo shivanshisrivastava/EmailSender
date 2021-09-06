@@ -1,0 +1,10 @@
+button
+{
+    background-color: #5a5959;
+    color: #eae7dc;
+    padding: 0.4rem;
+    border-radius: 4px;
+    box-shadow: 1px 1px #4b4a47;
+    width: 24vh;
+    /* margin: 4px; */
+}
