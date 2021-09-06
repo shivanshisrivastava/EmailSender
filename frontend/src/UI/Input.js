@@ -1,7 +1,7 @@
 import classes from '../UI/Input.module.css';
 const Input = (props) =>
-{
-    return(<input placeholder={props.placeholder}/>);
+{    console.log(props.type);
+    return(<input placeholder={props.placeholder} type={props.type} required/>);
 }
 
 export default Input;

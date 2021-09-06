@@ -3,6 +3,7 @@ import Navigation from './Components/Navigation';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import Auth from './pages/Auth';
 import User from './pages/User';
+import Transactions from './pages/Transactions';
 
 function App() {
   return (
@@ -13,13 +14,14 @@ function App() {
           <Route path='/' exact>
 
           </Route>
-          <Route path='/Auth'>
+          <Route path='/Auth/:Type'>
             <Auth />
           </Route> 
-          <Route  path='/user'>
+          <Route  path='/User'>
             <User />
           </Route>
-          <Route>
+          <Route path='/Transactions'>
+          <Transactions />
           </Route>
           <Route>
           </Route>

@@ -1,22 +1,13 @@
 import { useState } from 'react';
-import { Route } from 'react-router-dom';
-import Button from '../UI/Button';
-import Card from '../UI/Card';
-import Input from '../UI/Input';
+import { Route, Switch } from 'react-router-dom';
+import Form from '../UI/Form';
 const Auth = (props) =>
-{
-    const {signUp, setSignUp} = useState(true);
-
-    
-    return(<Card>
-     {!signUp && <Button props={{backgroundColor:'white'}}>Login</Button>}
-      <Button>Signup</Button>
-      {signUp && <Input placeholder='Name'/>}
-      <Input placeholder='Email'/>
-      <Input placeholder='Password'/>
-      <Button>Signup</Button>
-      <p>Already a member? <a href='#'>Login insted.</a></p>
-    </Card>);
+{ const queryString = window.location.pathname;
+  const type = queryString.split('/')[2];
+  console.log(type);
+    return(<div>
+          <Form type={type}/>
+    </div>);
 }
 
 export default Auth;
