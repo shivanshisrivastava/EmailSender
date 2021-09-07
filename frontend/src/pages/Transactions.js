@@ -1,8 +1,9 @@
 import { Route } from 'react-router-dom';
-import TransactionList from '../Components/TransactionListItem';
+import TransactionList from '../Components/TransactionList';
+import Card from '../UI/Card';
 const Transaction= (props) =>
 {
-    return(<TransactionList/>);
+    return(<TransactionList />);
 }
 
 export default Transaction;
