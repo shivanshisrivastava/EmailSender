@@ -1,9 +1,11 @@
-import { Route } from 'react-router-dom';
+import { Link,Route } from 'react-router-dom';
+import Card from '../UI/Card';
+import UserComponent from '../Components/UserComponent';
 const User = (props) =>
 {
-    return(<section>
-        <h1>User Detail</h1>
-      </section>);
+    return(
+      <UserComponent />
+     );
 }
 
 export default User;

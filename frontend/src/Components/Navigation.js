@@ -1,19 +1,20 @@
+import { NavLink } from 'react-router-dom';
 import classes from '../Components/Navigation.module.css';
 const Navigation = () => {
     return (<nav className={classes.Nav}>
         <ul className={classes.NavList}>
-            <li className={classes.NavListItem}>
+            <NavLink to="/auth/Login" activeClassName={classes.selected} className={classes.NavListItem}>
                 Login
-            </li>
-            <li className={classes.NavListItem}>
+            </NavLink>
+            <NavLink to="/Transactions" activeClassName={classes.selected} className={classes.NavListItem}>
                 Transactions
-            </li>
-            <li className={classes.NavListItem}>
+            </NavLink>
+            <NavLink to="/Email" activeClassName={classes.selected} className={classes.NavListItem}>
                 Send Emails
-            </li>
-            <li className={classes.NavUser}>
+            </NavLink>
+            <NavLink to="/User" activeClassName={classes.selected} className={classes.NavUser}>
                 Shivanshi Srivastava
-            </li>
+            </NavLink>
         </ul>
     </nav>);
 }

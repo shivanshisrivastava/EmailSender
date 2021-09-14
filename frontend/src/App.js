@@ -4,6 +4,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import Auth from './pages/Auth';
 import User from './pages/User';
 import Transactions from './pages/Transactions';
+import Email from './pages/Email';
 
 function App() {
   return (
@@ -17,13 +18,14 @@ function App() {
           <Route path='/Auth/:Type'>
             <Auth />
           </Route> 
-          <Route  path='/User'>
+          <Route path='/User'>
             <User />
           </Route>
           <Route path='/Transactions'>
           <Transactions />
           </Route>
-          <Route>
+          <Route path='/Email'>
+          <Email />
           </Route>
         </Switch>
       </main>

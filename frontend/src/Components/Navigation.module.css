@@ -33,3 +33,10 @@
     margin-left: auto;
     flex-direction: row;
 }
+
+.selected
+{
+    background: plum;
+    box-shadow: 1px 1px #4b4a47;
+    color: white;
+}
