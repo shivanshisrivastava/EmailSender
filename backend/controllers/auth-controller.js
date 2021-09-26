@@ -19,19 +19,26 @@ const DUMMY = [
   }
 ];
 
-const login = (req, res) => {
- console.log(req.body);
-//   const { email, password } = req.body;
-//   const isValidUser = DUMMY.find(user => user.email === email )
-
-//   if(!isValidUser && user.password !== password)
-//   {
-//       console.log('Incorrect Username/Password!');
-//   }
-//   res.json({message:'Logged In!'});
-res.json(req.body);
+const login = async (req, res, next) => {
+  try{
+    console.log(req);
+  const { email, password } = req.body;
+    const isValidUser =  await DUMMY.find(user => user.email === email )
+  
+  if(!isValidUser && user.password !== password)
+  {
+      console.log('Incorrect Username/Password!');
+  }
+  res.json({message:'Logged In!'});
+}
+  catch(ex)
+  {
+    res.json({message:'Error'});
+  }
 };
 
-const signUp = (req, res, next) => {};
+const signUp = (req, res, next) => {
+  
+};
 
 exports.login = login;
